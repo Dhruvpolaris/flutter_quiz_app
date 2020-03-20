@@ -13,9 +13,7 @@ class MyApp extends StatefulWidget {
 
   @override
   State<StatefulWidget> createState() {
-
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-
     return _MyAppState();
   }
 }
