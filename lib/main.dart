@@ -1,5 +1,6 @@
 import 'package:first_app/result.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import './quiz.dart';
 import './result.dart';
 
@@ -9,8 +10,12 @@ import './result.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
+
   @override
   State<StatefulWidget> createState() {
+
+    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+
     return _MyAppState();
   }
 }
@@ -74,10 +79,19 @@ class _MyAppState extends State<MyApp> {
             title: Text('My First App'),
           ),
           body: _questionIndex < _questions.length
-              ? Quiz(
-                  answerQuestion: _answerQuestion,
-                  questionIndex: _questionIndex,
-                  questions: _questions)
+              ? Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Card(
+                      margin: EdgeInsets.all(10),
+                      elevation: 6,
+                      child: Quiz(
+                          answerQuestion: _answerQuestion,
+                          questionIndex: _questionIndex,
+                          questions: _questions),
+                    ),
+                  ],
+                )
               : Result(_totalScore, _resetQuiz)),
     );
   }
