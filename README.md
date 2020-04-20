@@ -22,5 +22,5 @@ Traditionally the right answer choice will have '1' score and the wrond choices 
 <p align="center"> 
 <img width="300" height="600" src="https://github.com/Dhruvpolaris/flutter_quiz_app/blob/master/Screenshots/FirstAppSs1.jpg">
 &emsp; &emsp; &emsp; &emsp; 
-<img width="300" height="600" src="https://github.com/Dhruvpolaris/flutter_quiz_app/blob/master/Screenshots/FirstAppSs1.jpg">
+<img width="300" height="600" src="https://github.com/Dhruvpolaris/flutter_quiz_app/blob/master/Screenshots/FirstAppSs2.jpg">
 </p>
